@@ -1,1 +1,12 @@
-<p>people works!</p>
+<ul class="people">
+  <li class="people__item" *ngFor="let hero of people$ | async">
+    <span>Имя: {{ hero.name }}</span>
+    <span>Рост: {{ hero.height }}</span>
+    <span>Вес: {{ hero.mass }}</span>
+    <span>Цвет волос: {{ hero.hair_color }}</span>
+    <span>Цвет кожи: {{ hero.skin_color }}</span>
+    <span>Цвет глаз: {{ hero.eye_color }}</span>
+    <span>Год рождения: {{ hero.birth_year}}</span>
+    <span>Пол: {{ hero.gender }}</span>
+  </li>
+</ul>

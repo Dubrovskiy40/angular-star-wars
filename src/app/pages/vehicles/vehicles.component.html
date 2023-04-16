@@ -1,1 +1,17 @@
-<p>vehicles works!</p>
+<ul class="vehicles">
+  <li class="vehicles__item" *ngFor="let vehicle of vehicles$ | async">
+    <span>Имя: {{ vehicle.name }}</span>
+    <span>Модель: {{ vehicle.model }}</span>
+    <span>Производитель: {{ vehicle.manufacturer }}</span>
+    <span>Стоимость в кредитах: {{ vehicle.cost_in_credits }}</span>
+    <span>Длина: {{ vehicle.length }}</span>
+    <span>Максимальная атмосферная скорость: {{ vehicle.max_atmosphering_speed }}</span>
+    <span>Экипаж: {{ vehicle.crew}}</span>
+    <span>Пассажиры: {{ vehicle.passengers }}</span>
+    <span>Грузоподъемность: {{ vehicle.cargo_capacity }}</span>
+    <span>Расходные материалы: {{ vehicle.consumables }}</span>
+    <span>Класс: {{ vehicle.vehicle_class }}</span>
+    <span>Создание: {{ vehicle.created }}</span>
+    <span>Редактирование: {{ vehicle.edited }}</span>
+  </li>
+</ul>

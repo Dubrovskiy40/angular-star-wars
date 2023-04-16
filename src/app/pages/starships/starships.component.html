@@ -1,1 +1,18 @@
-<p>starships works!</p>
+<ul class="starShips">
+  <li class="starShips__item" *ngFor="let starShip of starShips$ | async">
+    <span>Имя: {{ starShip.name }}</span>
+    <span>Модель: {{ starShip.model }}</span>
+    <span>Производитель: {{ starShip.manufacturer }}</span>
+    <span>Стоимость в кредитах: {{ starShip.cost_in_credits }}</span>
+    <span>Длина: {{ starShip.length }}</span>
+    <span>Максимальная атмосферная скорость: {{ starShip.max_atmosphering_speed }}</span>
+    <span>Экипаж: {{ starShip.crew}}</span>
+    <span>Пассажиры: {{ starShip.passengers }}</span>
+    <span>Грузоподъемность: {{ starShip.cargo_capacity }}</span>
+    <span>Расходные материалы: {{ starShip.consumables }}</span>
+    <span>Журнал: {{ starShip.MGLT }}</span>
+    <span>Класс: {{ starShip.starship_class }}</span>
+    <span>Создание: {{ starShip.created }}</span>
+    <span>Редактирование: {{ starShip.edited }}</span>
+  </li>
+</ul>

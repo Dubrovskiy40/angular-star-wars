@@ -1,1 +1,12 @@
-<p>films works!</p>
+<ul class="films">
+  <li class="films__item" *ngFor="let film of films$ | async">
+    <span>Название фильма: {{ film.title }}</span>
+    <span>Номер эпизода: {{ film.episode_id }}</span>
+    <span>Описание: {{ film.opening_crawl }}</span>
+    <span>Режиссер: {{ film.director }}</span>
+    <span>Продюсер: {{ film.producer }}</span>
+    <span>Дата релиза: {{ film.release_date }}</span>
+    <span>Дата создания: {{ film.created}}</span>
+    <span>Редактирование: {{ film.edited }}</span>
+  </li>
+</ul>

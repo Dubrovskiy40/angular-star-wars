@@ -1,1 +1,15 @@
-<p>species works!</p>
+<ul class="species">
+  <li class="species__item" *ngFor="let specie of species$ | async">
+    <span>Имя: {{ specie.name }}</span>
+    <span>Классификация: {{ specie.classification }}</span>
+    <span>Обозначение: {{ specie.designation }}</span>
+    <span>Средний рост: {{ specie.average_height }}</span>
+    <span>Цвет кожи: {{ specie.skin_colors }}</span>
+    <span>Цвет волос: {{ specie.hair_colors }}</span>
+    <span>Цвет глаз: {{ specie.eye_colors}}</span>
+    <span>Пол: {{ specie.average_lifespan }}</span>
+    <span>Язык: {{ specie.language }}</span>
+    <span>Создание: {{ specie.created }}</span>
+    <span>Редактирование: {{ specie.edited }}</span>
+  </li>
+</ul>

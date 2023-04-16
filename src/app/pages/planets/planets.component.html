@@ -1,1 +1,15 @@
-<p>planets works!</p>
+<ul class="planets">
+  <li class="planets__item" *ngFor="let planet of planets$ | async">
+    <span>Название планеты {{ planet.name }}</span>
+    <span>Период: {{ planet.rotation_period }}</span>
+    <span>Орбитальный период: {{ planet.orbital_period }}</span>
+    <span>Диаметр планеты: {{ planet.diameter }}</span>
+    <span>Климат: {{ planet.climate }}</span>
+    <span>Гравитация: {{ planet.gravity }}</span>
+    <span>Местность: {{ planet.terrain}}</span>
+    <span>Поверхность воды: {{ planet.surface_water }}</span>
+    <span>Популяция: {{ planet.population }}</span>
+    <span>Создание: {{ planet.created }}</span>
+    <span>Редактирование: {{ planet.edited }}</span>
+  </li>
+</ul>
